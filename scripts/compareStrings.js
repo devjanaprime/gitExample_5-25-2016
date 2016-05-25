@@ -8,11 +8,15 @@ var longerString  = function(){
     console.log("Whitspace ROCKS!!!");
   }
   else {
-    if( string1.length > string2.length ){
+    if (string1 === "" || string2 === "") {
+      console.log("Sorry, but you must enter some text into both boxes.");
+    }
+
+    else if( string1.length > string2.length ){
       console.log( string1 + " is the longest string" );
     }
     else{
       console.log( string2 + " is the longest string" );
     }
   }
-}
+};

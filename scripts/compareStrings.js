@@ -5,7 +5,10 @@ var longerString  = function(){
 
   // check for whitespace
   if( string1.indexOf( " " ) >= 0 || string2.indexOf( " " ) >= 0 ){
-    console.log("Whitspace ROCKS!!!");
+    console.log("No whitespace, try again.");
+  }
+  else if (string1.length <= 0 || string2.length <= 0){
+    console.log("Must write something in both spaces.");
   }
   else {
     if( string1.length > string2.length ){
@@ -15,4 +18,4 @@ var longerString  = function(){
       console.log( string2 + " is the longest string" );
     }
   }
-}
+};

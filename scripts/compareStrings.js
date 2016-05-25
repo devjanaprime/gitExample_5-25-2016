@@ -3,6 +3,11 @@ var longerString  = function(){
   var string1 = document.getElementById('word1').value;
   var string2 = document.getElementById('word2').value;
 
+  // check for empty input
+if(string1.length === 0 || string2.length === 0) {
+  console.log("Please type something in the box");
+}
+  else {
   // check for whitespace
   if( string1.indexOf( " " ) >= 0 || string2.indexOf( " " ) >= 0 ){
     console.log("Whitspace ROCKS!!!");
@@ -16,3 +21,4 @@ var longerString  = function(){
     }
   }
 }
+};

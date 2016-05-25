@@ -3,6 +3,9 @@ var longerString  = function(){
   var string1 = document.getElementById('word1').value;
   var string2 = document.getElementById('word2').value;
 
+  if(string1 === '' || string2 === '' ){
+    console.log("Please enter text in the empty box(es)");
+  }
   // check for whitespace
   if( string1.indexOf( " " ) >= 0 || string2.indexOf( " " ) >= 0 ){
     console.log("Whitspace ROCKS!!!");
@@ -14,5 +17,6 @@ var longerString  = function(){
     else{
       console.log( string2 + " is the longest string" );
     }
+
   }
-}
+};

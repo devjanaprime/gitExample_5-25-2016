@@ -5,7 +5,7 @@ var longerString  = function(){
 
   // check for whitespace
   if( string1.indexOf( " " ) >= 0 || string2.indexOf( " " ) >= 0 ){
-    console.log("Whitspace ROCKS!!!");
+    console.log("Whitespace ROCKS!!!");
   }
   else {
     if (string1 === "" || string2 === "") {

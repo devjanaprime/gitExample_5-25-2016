@@ -7,7 +7,10 @@ var longerString  = function(){
   if( string1.indexOf( " " ) >= 0 || string2.indexOf( " " ) >= 0 ){
     console.log("Whitspace ROCKS!!!");
   }
-  else {
+  else if(string1.indexOf(" ") || string2.indexOf(" ")) {
+    alert("You didn't enter anything!");
+  }
+  else{
     if( string1.length > string2.length ){
       console.log( string1 + " is the longest string" );
     }
@@ -15,4 +18,4 @@ var longerString  = function(){
       console.log( string2 + " is the longest string" );
     }
   }
-}
+};
